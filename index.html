@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Exemplo Formulário</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/form.css">
+    <script src="JS/script.js"></script>
+    
+</head>
+<body>
+    <div id="buttons">
+        <audio src="audio/DireDireDocks.mp3" class="s1"></audio>
+        <audio src="audio/DKCountry.mp3" class="s2"></audio>
+        <audio src="audio/Lost_Woods.mp3" class="s3"></audio>
+        <audio src="audio/MarioTheme.mp3" class="s4"></audio>
+        <button onclick="ouvir()" title="Clique para ouvir uma música aleatória">Ouvir</button>
+        <button onclick="pausar()">Pausar</button>
+        <button onclick="parar()" >Parar</button>
+    </div>
+    <main>
+        <div>
+            <h1 id="title">Cadastro de Desenvolvedores</h1>
+            <p id="subtitle">Complete as Informações</p><br>
+        </div>
+            <Form action="https://formsubmit.co/moisesjlima@outlook.com" method="POST">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500//thanks.html">
+            <input type="hidden" name="_subject" value="Novo envio do formulário">
+            <input type="hidden" name="_autoresponse" value="Formulário preenchido - obrigado Dev">
+                
+                <fieldset class="group">
+                    <div class="campo">
+                        <label for="nome"><strong>Nome</strong></label>
+                        <input type="text" name="nome" id="nome" required>
+                    </div>
+    
+                    <div class="campo">
+                        <label for="sobrenome"><strong>Sobrenome</strong></label>
+                        <input type="text" name="sobrenome" id="sobrenome" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="email"><strong>Email</strong></label>
+                        <input type="email" name="email" id="email" placeholder="Email Address" required>
+                    </div>
+                </fieldset>
+
+
+    
+                <div class="campo">
+                    <label><strong>Você é um desenvolvedor: </strong></label><br>
+                    <label>
+                        <input type="radio" name="Desenvolvedor" value="frontend" checked>Front-end
+                    </label>
+                    <label>
+                        <input type="radio" name="Desenvolvedor" value="backtend">Back-end
+                    </label>
+                    <label>
+                        <input type="radio" name="Desenvolvedor" value="full-stack">Full-Stack
+                    </label>
+                </div>
+    
+                <div class="campo">
+                    <label for="senioridade"><strong>SeniorIdade</strong></label>
+                    <select id="senioridade" name="Cargo" required>
+                        <option selected disable value="">Escolha</option>
+                        <option value="Junior">Junior</option>
+                        <option value="Pleno">Pleno</option>
+                        <option value="Senior">Senior</option>
+                    </select>
+                </div>
+    
+                <Fieldset class="group">
+                    <div id="check">
+                        <label><strong>Selecione as tecnologias que utiliza:</strong></label><br><br>
+                        <Input type="checkbox" name="tec1" id="tec1" value="HTML">
+                        <label for="tec1">HTML</label>
+    
+                        <input type="checkbox" name="tec2" id="tec2" value="CSS">
+                        <label for="tec2">CSS</label>
+    
+                        <input type="checkbox" name="tec3" id="tec3" value="Javascript">
+                        <label for="tec3">Javascript</label>
+    
+                        <input type="checkbox" name="tec4" id="tec4" value="PHP">
+                        <label for="tec4">PHP</label>
+    
+                        <input type="checkbox" name="tec5" id="tec5" value="C#">
+                        <label for="tec5">C#</label>
+    
+                        <input type="checkbox" name="tec6" id="tec6" value="Python">
+                        <label for="tec6">Python</label>
+    
+                        <input type="checkbox" name="tec7" id="tec7" value="Java">   
+                        <label for="tec7">Java</label>
+                    </div>
+                </Fieldset>
+    
+                <div class="campo"> 
+                    <label for="experiencia"><strong>Conte um pouco da sua experiência: </strong></label>
+                    <textarea style="width: 32em" name="experiencia" id="experiencia"></textarea>
+                </div>
+            
+                <button type="submit" id="concluir">Concluir</button>
+            </Form>
+    </main>
+    
+</body>
+</html> 
+<!--Foi utilizado o https://formsubmit.co/ site que fornece formulário funcional sem a necessidade de programar um back-end, adicionando somente alguns atributos a tags-->

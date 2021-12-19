@@ -1,0 +1,59 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stick&display=swap');
+/* Cores Paleta
+#01087C
+#4048C9
+#505AFC
+#020A96
+#0311FC
+bônus: orange...
+*/
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    /*background-image: linear-gradient(-200deg, #01077cd5, #4049c9c7, #5058fcc4, #020A96, #0311FC
+    ); */
+    background-image: url("https://wallpaperaccess.com/full/983837.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+
+}
+
+#buttons button{margin-left: 2px ; margin-bottom: 8px; border-radius: 10px; padding: 5px;}
+#buttons button:hover {cursor: pointer; transition: 0.4s; transform: scale(105%)}
+
+main {
+    width: 450px;
+    border-radius: 10px;
+    box-shadow: 15px 15px 15px #02099671; /*pro lado, pra baixo, espalhar, transparência*/
+    background-color:rgb(255, 255, 255);
+    margin: auto;
+    padding: 10px;
+    opacity: 0.85;
+    transition: 0.8s;
+}
+main:hover{opacity: 1;transition: 0.85s;}
+
+h1 {
+    font-family: 'lobster', 'cursive';
+    color: rgb(252, 164, 2);
+    text-align: center;
+    text-shadow: 5px 5px 2px rgba(253, 172, 23, 0.336);
+}
+
+h2 {
+    color: #505AFC;
+    font-family: 'DotGothic16', sans-serif;
+}
+
+p#subtitle {font-size: 1.4em; font-family: 'lobster', 'cursive'; color: #0b6edf; text-decoration: underline; margin-top: 10px;}
+
+a {text-decoration: none; color: #505AFC;}
+p#link {color: rgb(252, 164, 2)}
+
+button#concluir:hover {cursor: pointer; transition: 0.4s; transform: scale(105%)}
