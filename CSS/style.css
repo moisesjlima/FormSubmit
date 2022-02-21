@@ -33,7 +33,7 @@ main {
     background-color:rgb(255, 255, 255);
     margin: auto;
     padding: 10px;
-    opacity: 0.85;
+    opacity: 0.89;
     transition: 0.8s;
 }
 main:hover{opacity: 1;transition: 0.85s;}
